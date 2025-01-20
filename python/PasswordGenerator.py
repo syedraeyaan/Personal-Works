@@ -9,8 +9,8 @@ special_characters = list(string.punctuation)
 
 password = [] # Empty password list to store the characters
 
-num_alpha = int(input("Enter the number of alphabets you need: "))
-num_digit = int(input("Enter the number of digits you need: "))
+num_alpha   = int(input("Enter the number of alphabets you need: "))
+num_digit   = int(input("Enter the number of digits you need: "))
 num_special = int(input("Enter the number of special characters you need: "))
 
 for n in range(0, num_alpha):
