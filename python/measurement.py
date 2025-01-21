@@ -3,6 +3,8 @@ import math
 
 pi = math.pi
 
+# Circle Functions
+
 def circle_area(r: float):
     return pi*(r**2)
 
@@ -11,6 +13,8 @@ def circumference(r:float):
 
 def diameter(r:float):
     return 2*r
+
+# Quadrilateral Functions
 
 def area_straightQuad(l:float, w:float):
     return l*w
