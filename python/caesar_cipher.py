@@ -14,6 +14,8 @@ if work == "encode":
             
             letter_index = letters.index(i)
             caesar_index = letter_index + offset
+
+            caesar_index = caesar_index % len(letters)
             
             caesar_text += letters[caesar_index] # Concatenation of the alphabets to build the caesar_text
         
