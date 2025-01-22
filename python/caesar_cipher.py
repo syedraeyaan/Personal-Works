@@ -28,7 +28,26 @@ if work == "encode":
     print(f"Encrypted Message: {caesar_cipher_encrypt(message, offset_input)}")
 
 elif work == "decode":
-    print("We are currently working on this feature !")
+     def caesar_cipher_decrypt(original_text:str , offset:int): # Defines the parameters
+        
+        caesar_text = "" # Empty String to store the new alphabet
+        
+        for i in original_text:
+            
+            letter_index = letters.index(i)
+            caesar_index = abs(letter_index - offset)
+
+            caesar_index = caesar_index % len(letters)
+            
+            caesar_text += letters[caesar_index] # Concatenation of the alphabets to build the caesar_text
+        
+        return caesar_text # Returns the encrypted string as the output
+
+     message = input("Enter the message to decrypt: \n").lower()
+     offset_input = int(input("Enter the offset number: \n"))
+
+     print(f"Your original text: {message}")
+     print(f"Encrypted Message: {caesar_cipher_decrypt(message, offset_input)}")
 
 else:
     print("Invalid Input")
